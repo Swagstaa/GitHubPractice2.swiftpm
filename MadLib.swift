@@ -9,12 +9,17 @@ import SwiftUI
 
 
 
-struct MadLib: View {
-    @State var noun = ""
-    @State var verb = ""
-    @State var adjective = ""
-    var body: some View {
-        Text("Hi")
+class MadLib{
+    var noun: String
+    var verb: String
+    var adjective: String
+    
+    
+    init() {
+        noun = ""
+        verb = ""
+        adjective = ""
     }
 }
 
+    

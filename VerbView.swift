@@ -2,16 +2,15 @@
 import SwiftUI
 
 struct VerbView: View {
+    @Binding var madLib: MadLib
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+    
         
         
         NavigationLink("Go to Adjective View"){
-                            AdjectiveView()
+            AdjectiveView(madLib: madLib)
                         }
     }
 }
 
-#Preview {
-    VerbView()
-}
